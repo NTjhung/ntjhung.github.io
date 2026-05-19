@@ -2,6 +2,8 @@
 
 ## 1. Entra ID User Lifecycle Automation
 
+**Project Link:** https://github.com/ntjhung/entra-id-user-lifecycle-automation
+
 ### Problem
 Companies need a consistent way to onboard, update, and offboard users while reducing manual errors and preventing unnecessary access.
 
@@ -14,25 +16,27 @@ Companies need a consistent way to onboard, update, and offboard users while red
 
 ### What I Built
 - Created a fake company structure with departments and groups
-- Created users from a sample CSV file
+- Created sample users from a CSV file
+- Created department-based security groups
 - Assigned users to groups based on department
+- Created a Joiner-Mover-Leaver runbook
 - Created an offboarding checklist
-- Documented access control rules
-- Exported sample access evidence
+- Created an access control matrix
+- Collected screenshots as audit evidence
 
 ### Skills Demonstrated
 - User provisioning
-- Deprovisioning
+- Deprovisioning documentation
 - Joiner/Mover/Leaver workflows
 - Group-based access control
+- IAM automation
 - IAM documentation
-- Audit evidence
+- Audit evidence collection
 
 ### Resume Bullet
 Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Microsoft Graph to simulate onboarding, group assignment, access removal, and audit evidence collection.
 
 ---
-
 ## 2. Conditional Access Security Baseline
 
 ### Problem
