@@ -39,32 +39,41 @@ Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Mi
 ---
 ## 2. Conditional Access Security Baseline
 
+**Project Link:** https://github.com/ntjhung/entra-conditional-access-baseline
+
 ### Problem
 Organizations need to enforce MFA and reduce risky sign-ins without accidentally locking out users or administrators.
 
 ### Tools Used
 - Microsoft Entra ID
-- Conditional Access
-- MFA
-- Sign-in logs
+- Conditional Access planning
+- MFA policy design
 - Break-glass account planning
+- Report-only testing strategy
+- Rollback documentation
+- GitHub documentation
 
 ### What I Built
 - Designed a Conditional Access policy matrix
-- Created MFA policies for admins and standard users
-- Documented break-glass account exclusions
-- Used report-only mode for safe testing
-- Created rollback documentation
+- Documented MFA policies for admins and standard users
+- Created a break-glass account plan
+- Created a rollback plan
+- Created a testing results document
+- Documented the lab tenant licensing limitation
+- Collected screenshots as evidence
 
 ### Skills Demonstrated
 - Conditional Access planning
-- MFA enforcement
-- Risk reduction
+- MFA enforcement strategy
 - Break-glass account planning
 - Security documentation
+- Rollback planning
+- IAM policy design
+- Evidence collection
+- Lab limitation documentation
 
 ### Resume Bullet
-Designed a Microsoft Entra Conditional Access baseline with MFA enforcement, legacy authentication blocking, break-glass exclusions, report-only testing, and rollback documentation.
+Designed a Microsoft Entra Conditional Access security baseline with MFA enforcement strategy, admin protection, legacy authentication blocking, break-glass planning, report-only rollout strategy, rollback documentation, and licensing limitation evidence.
 
 ---
 
