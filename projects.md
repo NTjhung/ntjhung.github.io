@@ -77,34 +77,44 @@ Designed a Microsoft Entra Conditional Access security baseline with MFA enforce
 
 ---
 
-## 3. Access Reviews and Identity Governance Lab
+## 3. Identity Governance Access Review Simulation
+
+**Project Link:** https://github.com/ntjhung/identity-governance-access-review-simulation
 
 ### Problem
-Companies need to regularly verify that users still need access to sensitive groups, applications, and privileged roles.
+Organizations need to regularly verify that users still need access to sensitive groups, applications, and privileged roles. Without regular access reviews, users may keep access longer than necessary, which increases security and audit risk.
 
 ### Tools Used
 - Microsoft Entra ID
-- Access review concepts
-- Group membership reports
-- Audit evidence
+- Security groups
+- Manual access review process
+- Group membership review
 - Remediation tracking
+- Audit evidence documentation
+- GitHub documentation
 
 ### What I Built
-- Created an access review plan
-- Built reviewer instructions
-- Reviewed Finance, Contractor, and IT Admin groups
-- Created a remediation tracker
-- Documented sample audit evidence
+- Created a manual access review plan
+- Created reviewer instructions
+- Created sample access review data
+- Reviewed HR, Finance, IT Admin, and Contractor groups
+- Built a remediation tracker
+- Built an access review risk matrix
+- Created an audit evidence packet
+- Collected group membership screenshots as evidence
 
 ### Skills Demonstrated
-- Access reviews
 - Identity governance
-- Least privilege
-- Audit preparation
+- Access reviews
+- Least privilege analysis
+- Group membership review
+- Risk-based access review
 - Remediation tracking
+- Audit evidence collection
+- IAM documentation
 
 ### Resume Bullet
-Built an identity governance access review lab for Finance, Contractor, and IT Admin groups, including reviewer instructions, remediation tracking, and audit evidence documentation.
+Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.
 
 ---
 
