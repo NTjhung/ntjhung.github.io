@@ -1,28 +1,94 @@
 # Identity and Access Management Portfolio
 
-Identity and Access Management portfolio focused on Microsoft Entra ID, Okta, Conditional Access, access reviews, privileged access, and IAM automation.
+Identity and Access Management portfolio focused on Microsoft Entra ID, Okta, Conditional Access, access reviews, privileged access, Microsoft Graph, PowerShell, and IAM automation.
 
 ## About Me
 
-I’m an IT professional focused on building hands-on skills in Identity and Access Management. My portfolio includes Microsoft Entra ID, Okta, MFA, Conditional Access, user lifecycle management, access reviews, privileged access, and PowerShell automation.
+I’m an IT professional with 5+ years of systems administration experience, focused on Identity and Access Management and Microsoft identity technologies. My hands-on portfolio includes Microsoft Entra ID, Okta, MFA, Conditional Access planning, identity governance, access reviews, Microsoft Graph reporting, PowerShell automation, and audit evidence documentation.
 
-## Featured Projects
+## Featured IAM Projects
 
-- [Projects](projects.md)
-- [Resume](resume.md)
-- [Contact](contact.md)
+### 1. Entra ID User Lifecycle Automation
+
+Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Microsoft Graph to simulate onboarding, group assignment, access removal, and audit evidence collection.
+
+**Skills shown:** Entra ID, PowerShell, Microsoft Graph, user lifecycle, group-based access, onboarding, offboarding, audit evidence.
+
+[View Project](https://github.com/ntjhung/entra-id-user-lifecycle-automation) | [Screenshots](https://github.com/ntjhung/entra-id-user-lifecycle-automation/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/entra-id-user-lifecycle-automation/tree/main/docs)
+
+---
+
+### 2. Conditional Access Security Baseline Design
+
+Designed a Microsoft Entra Conditional Access security baseline with MFA enforcement strategy, admin protection, legacy authentication blocking, break-glass planning, report-only rollout strategy, rollback documentation, and licensing limitation evidence.
+
+**Skills shown:** Conditional Access planning, MFA strategy, break-glass planning, rollback planning, security documentation, IAM policy design.
+
+[View Project](https://github.com/ntjhung/entra-conditional-access-baseline) | [Screenshots](https://github.com/ntjhung/entra-conditional-access-baseline/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/entra-conditional-access-baseline/tree/main/docs)
+
+---
+
+### 3. Identity Governance Access Review Simulation
+
+Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.
+
+**Skills shown:** Identity governance, access reviews, least privilege, remediation tracking, group membership review, audit evidence.
+
+[View Project](https://github.com/ntjhung/identity-governance-access-review-simulation) | [Screenshots](https://github.com/ntjhung/identity-governance-access-review-simulation/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/identity-governance-access-review-simulation/tree/main/docs)
+
+---
+
+### 4. Okta SSO and MFA Integration Lab
+
+Built an Okta SSO and MFA lab with users, groups, group-based application assignment, MFA policy documentation, access control planning, troubleshooting notes, and audit evidence screenshots.
+
+**Skills shown:** Okta administration, SSO concepts, MFA policy planning, group-based app assignment, least privilege, IAM troubleshooting.
+
+[View Project](https://github.com/ntjhung/okta-sso-mfa-integration-lab) | [Screenshots](https://github.com/ntjhung/okta-sso-mfa-integration-lab/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/okta-sso-mfa-integration-lab/tree/main/docs)
+
+---
+
+### 5. Microsoft Graph IAM Reporting Automation
+
+Built a Microsoft Graph IAM reporting automation project using PowerShell and REST API calls to export Microsoft Entra ID users, groups, group memberships, and audit evidence reports for access review support.
+
+**Skills shown:** Microsoft Graph, PowerShell, REST API, IAM reporting, CSV exports, group membership review, audit evidence, troubleshooting.
+
+[View Project](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation) | [Screenshots](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation/tree/main/screenshots) | [Reports](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation/tree/main/reports) | [Documentation](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation/tree/main/docs)
+
+---
 
 ## Core Skills
 
 - Microsoft Entra ID
 - Okta
+- Microsoft Graph
+- PowerShell
 - MFA
-- Conditional Access
+- Conditional Access Planning
 - Access Reviews
-- Privileged Identity Management
+- Identity Governance
 - RBAC
+- Group-Based Access Control
 - User Provisioning
 - Deprovisioning
-- PowerShell
 - IAM Documentation
 - Audit Evidence
+- CSV Reporting
+- Troubleshooting
+
+## Certifications
+
+- Microsoft 365 Certified: Administrator Expert
+- Microsoft Certified: Cybersecurity Architect Expert
+- Microsoft Certified: Identity and Access Administrator Associate
+- Microsoft Certified: Azure Administrator Associate
+- Microsoft Certified: Azure Fundamentals
+- Certified ScrumMaster
+
+## Links
+
+- [Projects](projects.md)
+- [Resume](resume.md)
+- [Contact](contact.md)
+- [GitHub Profile](https://github.com/ntjhung)
