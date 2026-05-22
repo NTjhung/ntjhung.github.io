@@ -151,32 +151,44 @@ Created a privileged access management lab documenting Microsoft Entra PIM role 
 
 ## 5. Okta SSO and MFA Lab
 
+**Project Link:** https://github.com/ntjhung/okta-sso-mfa-integration-lab
+
 ### Problem
-Many organizations use Okta to manage application access, single sign-on, MFA, and user assignments.
+Organizations often use multiple cloud applications, and managing access manually can create security and operational issues. Okta helps centralize user access, group-based application assignment, single sign-on, and multi-factor authentication.
 
 ### Tools Used
 - Okta
+- Okta Integrator Free Plan
 - Users and groups
-- MFA policies
-- SSO app assignment
-- OIDC/SAML concepts
+- Application assignments
+- MFA policy planning
+- SSO concepts
+- GitHub documentation
+- Screenshots as audit evidence
 
 ### What I Built
-- Created Okta users and groups
-- Configured app assignments
+- Created Okta users
+- Created Okta groups
+- Assigned users to groups based on role and department
+- Created lab application integrations
+- Assigned applications to groups
 - Documented an MFA policy
 - Created an app assignment matrix
-- Documented troubleshooting notes
+- Created Okta troubleshooting notes
+- Collected screenshots as audit evidence
 
 ### Skills Demonstrated
 - Okta administration
 - SSO concepts
 - MFA policy planning
 - Group-based app assignment
+- Least privilege
 - IAM troubleshooting
+- Access control documentation
+- Audit evidence collection
 
 ### Resume Bullet
-Built an Okta IAM lab with users, groups, MFA policies, SSO app integration, group-based app assignment, and troubleshooting documentation.
+Built an Okta SSO and MFA lab with users, groups, group-based application assignment, MFA policy documentation, access control planning, troubleshooting notes, and audit evidence screenshots.
 
 ---
 
