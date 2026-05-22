@@ -191,5 +191,43 @@ Organizations often use multiple cloud applications, and managing access manuall
 Built an Okta SSO and MFA lab with users, groups, group-based application assignment, MFA policy documentation, access control planning, troubleshooting notes, and audit evidence screenshots.
 
 ---
+## 6. Microsoft Graph IAM Reporting Automation
 
+**Project Link:** https://github.com/ntjhung/microsoft-graph-iam-reporting-automation
+
+### Problem
+IAM teams often need to provide reports for audits, access reviews, security investigations, and user lifecycle management. Manually collecting this information can be slow and error-prone.
+
+### Tools Used
+- Microsoft Entra ID
+- Microsoft Graph REST API
+- PowerShell
+- Azure Cloud Shell
+- CSV reporting
+- GitHub documentation
+
+### What I Built
+- Created IAM reporting scripts
+- Exported Microsoft Entra ID users
+- Exported Microsoft Entra ID groups
+- Exported group membership reports
+- Generated CSV reports
+- Created a reporting plan
+- Collected screenshots as audit evidence
+- Used a REST-based Graph approach to work around module issues
+
+### Skills Demonstrated
+- IAM reporting automation
+- Microsoft Graph
+- PowerShell scripting
+- CSV reporting
+- Group membership review
+- Audit evidence collection
+- Troubleshooting
+- IAM documentation
+
+### Resume Bullet
+Built a Microsoft Graph IAM reporting automation project using PowerShell and REST API calls to export Microsoft Entra ID users, groups, group memberships, and audit evidence reports for access review support.
+
+---
 [Back to Home](index.md)
