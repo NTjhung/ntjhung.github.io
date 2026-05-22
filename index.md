@@ -1,6 +1,6 @@
 # Identity and Access Management Portfolio
 
-Identity and Access Management portfolio focused on Microsoft Entra ID, Okta, Conditional Access, access reviews, privileged access, Microsoft Graph, PowerShell, and IAM automation.
+Identity and Access Management portfolio focused on Microsoft Entra ID, Okta, Conditional Access, access reviews, Microsoft Graph, PowerShell, and IAM automation.
 
 ## About Me
 
@@ -8,53 +8,65 @@ I’m an IT professional with 5+ years of systems administration experience, foc
 
 ## Featured IAM Projects
 
-### 1. Entra ID User Lifecycle Automation
+---
+
+## 1. Entra ID User Lifecycle Automation
 
 Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Microsoft Graph to simulate onboarding, group assignment, access removal, and audit evidence collection.
 
 **Skills shown:** Entra ID, PowerShell, Microsoft Graph, user lifecycle, group-based access, onboarding, offboarding, audit evidence.
 
-[View Project](https://github.com/ntjhung/entra-id-user-lifecycle-automation) | [Screenshots](https://github.com/ntjhung/entra-id-user-lifecycle-automation/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/entra-id-user-lifecycle-automation/tree/main/docs)
+<img src="assets/entra-lifecycle/users-list.png" alt="Entra ID users list screenshot" width="800">
+
+[View Case Study](case-studies/entra-lifecycle.md)
 
 ---
 
-### 2. Conditional Access Security Baseline Design
+## 2. Conditional Access Security Baseline Design
 
 Designed a Microsoft Entra Conditional Access security baseline with MFA enforcement strategy, admin protection, legacy authentication blocking, break-glass planning, report-only rollout strategy, rollback documentation, and licensing limitation evidence.
 
 **Skills shown:** Conditional Access planning, MFA strategy, break-glass planning, rollback planning, security documentation, IAM policy design.
 
-[View Project](https://github.com/ntjhung/entra-conditional-access-baseline) | [Screenshots](https://github.com/ntjhung/entra-conditional-access-baseline/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/entra-conditional-access-baseline/tree/main/docs)
+<img src="assets/conditional-access/ca-license-warning.png" alt="Conditional Access licensing warning screenshot" width="800">
+
+[View Case Study](case-studies/conditional-access.md)
 
 ---
 
-### 3. Identity Governance Access Review Simulation
+## 3. Identity Governance Access Review Simulation
 
 Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.
 
 **Skills shown:** Identity governance, access reviews, least privilege, remediation tracking, group membership review, audit evidence.
 
-[View Project](https://github.com/ntjhung/identity-governance-access-review-simulation) | [Screenshots](https://github.com/ntjhung/identity-governance-access-review-simulation/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/identity-governance-access-review-simulation/tree/main/docs)
+<img src="assets/access-review/finance-access-review-members.png" alt="Finance access review members screenshot" width="800">
+
+[View Case Study](case-studies/access-review.md)
 
 ---
 
-### 4. Okta SSO and MFA Integration Lab
+## 4. Okta SSO and MFA Integration Lab
 
 Built an Okta SSO and MFA lab with users, groups, group-based application assignment, MFA policy documentation, access control planning, troubleshooting notes, and audit evidence screenshots.
 
 **Skills shown:** Okta administration, SSO concepts, MFA policy planning, group-based app assignment, least privilege, IAM troubleshooting.
 
-[View Project](https://github.com/ntjhung/okta-sso-mfa-integration-lab) | [Screenshots](https://github.com/ntjhung/okta-sso-mfa-integration-lab/tree/main/screenshots) | [Documentation](https://github.com/ntjhung/okta-sso-mfa-integration-lab/tree/main/docs)
+<img src="assets/okta/okta-app-group-assignment.png" alt="Okta app group assignment screenshot" width="800">
+
+[View Case Study](case-studies/okta.md)
 
 ---
 
-### 5. Microsoft Graph IAM Reporting Automation
+## 5. Microsoft Graph IAM Reporting Automation
 
 Built a Microsoft Graph IAM reporting automation project using PowerShell and REST API calls to export Microsoft Entra ID users, groups, group memberships, and audit evidence reports for access review support.
 
 **Skills shown:** Microsoft Graph, PowerShell, REST API, IAM reporting, CSV exports, group membership review, audit evidence, troubleshooting.
 
-[View Project](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation) | [Screenshots](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation/tree/main/screenshots) | [Reports](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation/tree/main/reports) | [Documentation](https://github.com/ntjhung/microsoft-graph-iam-reporting-automation/tree/main/docs)
+<img src="assets/graph-reporting/group-membership-report-preview.png" alt="Microsoft Graph group membership report preview screenshot" width="800">
+
+[View Case Study](case-studies/graph-reporting.md)
 
 ---
 
