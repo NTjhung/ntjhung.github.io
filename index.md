@@ -2,6 +2,60 @@
  <link rel="stylesheet" href="style.css">
 </head>
 
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="avatar-small">NT</span>
+      <span>Nicholas Tjhung</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/ntjhung">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Identity & Access Management Portfolio</p>
+
+      <h1>Microsoft Entra ID, Okta, and IAM Security Projects</h1>
+
+      <p class="hero-subtitle">
+        IT professional with 5+ years of systems administration experience and hands-on IAM projects covering Microsoft Entra ID, Okta, Conditional Access, MFA, access reviews, Microsoft Graph, PowerShell automation, and audit evidence documentation.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="projects.html">View Projects</a>
+        <a class="btn btn-secondary" href="resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="contact.html">Contact Me</a>
+      </div>
+    </div>
+
+    <aside class="profile-card">
+      <div class="avatar-large">NT</div>
+
+      <!-- To use a real headshot later, replace the line above with:
+      <img src="assets/headshot.jpg" alt="Nicholas Tjhung headshot" class="avatar-img">
+      -->
+
+      <h2>Nicholas Tjhung</h2>
+      <p>IAM | Entra ID | Okta | Microsoft 365 Security</p>
+
+      <div class="icon-row">
+        <span class="icon-pill">Microsoft</span>
+        <span class="icon-pill">Okta</span>
+        <span class="icon-pill">GitHub</span>
+        <span class="icon-pill">LinkedIn</span>
+      </div>
+    </aside>
+  </section>
+
 # Identity and Access Management Portfolio
 
 Identity and Access Management portfolio focused on Microsoft Entra ID, Okta, Conditional Access, access reviews, Microsoft Graph, PowerShell, and IAM automation.
