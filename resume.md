@@ -1,5 +1,10 @@
 # Resume
 
+Nick Tjhung
+Tacoma, WA | Remote
+Email: ntjhung@hotmail.com | GitHub: github.com/ntjhung
+IAM Portfolio: https://ntjhung.github.io
+
 ## Target Roles
 
 - Identity and Access Management Analyst
