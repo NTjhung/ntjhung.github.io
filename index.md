@@ -188,6 +188,33 @@ I’m an IT professional with 5+ years of systems administration experience, foc
   </section>
 ## Featured IAM Projects
 
+  <section class="section">
+    <div class="skill-panel">
+      <h2 class="section-title">Core IAM Skills</h2>
+      <p class="section-subtitle">
+        Skills demonstrated across the portfolio projects.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge">Microsoft Entra ID</span>
+        <span class="badge">Okta</span>
+        <span class="badge">Microsoft Graph</span>
+        <span class="badge">PowerShell</span>
+        <span class="badge">MFA</span>
+        <span class="badge">Conditional Access</span>
+        <span class="badge">Access Reviews</span>
+        <span class="badge">Identity Governance</span>
+        <span class="badge">RBAC</span>
+        <span class="badge">Group-Based Access</span>
+        <span class="badge">User Provisioning</span>
+        <span class="badge">Deprovisioning</span>
+        <span class="badge">Audit Evidence</span>
+        <span class="badge">CSV Reporting</span>
+        <span class="badge">Troubleshooting</span>
+      </div>
+    </div>
+  </section>
+
 ---
 
 ## 1. Entra ID User Lifecycle Automation
