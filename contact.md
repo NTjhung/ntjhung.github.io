@@ -1,3 +1,7 @@
+<head>
+ <link rel="stylesheet" href="style.css">
+</head>
+
 # Contact
 
 I’m interested in remote IAM Engineer, Microsoft Identity Engineer, Entra ID Administrator, Okta Administrator, Identity Governance Analyst, Access Review Analyst, and IAM Operations contract roles.
