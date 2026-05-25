@@ -1,3 +1,7 @@
+<head>
+ <link rel="stylesheet" href="style.css">
+</head>
+
 # IAM Portfolio Projects
 
 ## 1. Entra ID User Lifecycle Automation
