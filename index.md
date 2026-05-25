@@ -1,3 +1,7 @@
+<head>
+  <title>...</title>
+</head>
+
 # Identity and Access Management Portfolio
 
 Identity and Access Management portfolio focused on Microsoft Entra ID, Okta, Conditional Access, access reviews, Microsoft Graph, PowerShell, and IAM automation.
