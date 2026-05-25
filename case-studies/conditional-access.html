@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional Access Security Baseline | Nicholas Tjhung</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="avatar-small">NT</span>
+      <span>Nicholas Tjhung</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+      <a href="https://github.com/ntjhung">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero" style="grid-template-columns: 1fr; max-width: 980px;">
+    <div>
+      <p class="eyebrow">IAM Case Study</p>
+
+      <h1>Conditional Access Security Baseline</h1>
+
+      <p class="hero-subtitle">
+        A Microsoft Entra Conditional Access design project focused on MFA enforcement, administrator protection, legacy authentication blocking, break-glass planning, report-only rollout strategy, rollback documentation, and audit evidence.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge">Conditional Access</span>
+        <span class="badge">MFA</span>
+        <span class="badge">Admin Protection</span>
+        <span class="badge">Break-Glass</span>
+        <span class="badge">Rollback Planning</span>
+        <span class="badge">Security Documentation</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn btn-secondary" href="../resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="../contact.html">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Project Summary</h2>
+        <p>
+          This project demonstrates a Microsoft Entra Conditional Access security baseline design. The lab focuses on planning identity security controls that protect administrators, standard users, and sensitive groups while reducing the risk of accidentally locking out the tenant.
+        </p>
+
+        <p>
+          Live Conditional Access policy creation was limited by lab tenant licensing and billing profile setup, so this project is documented as a Conditional Access design, rollout, testing, rollback, and evidence package instead of a live production deployment.
+        </p>
+      </article>
+
+      <aside class="case-card">
+        <h2>Tools and Concepts</h2>
+
+        <div class="badge-row">
+          <span class="badge">Microsoft Entra ID</span>
+          <span class="badge">Conditional Access</span>
+          <span class="badge">MFA</span>
+          <span class="badge">Report-Only Testing</span>
+          <span class="badge">Break-Glass Account</span>
+          <span class="badge">Legacy Authentication</span>
+          <span class="badge">Rollback Plan</span>
+          <span class="badge">Audit Evidence</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Business Problem</h2>
+        <p>
+          Organizations need to protect user identities without creating unnecessary disruption or accidentally locking out users and administrators. Conditional Access helps enforce controls such as MFA, access restrictions, and legacy authentication blocking, but the policies need to be planned carefully before rollout.
+        </p>
+
+        <p>
+          A strong Conditional Access baseline should improve security, protect privileged users, support least privilege, document emergency access, and provide a safe testing and rollback path.
+        </p>
+      </article>
+
+      <aside class="case-card">
+        <h2>Why It Matters</h2>
+        <ul class="case-list">
+          <li>Protects administrator and privileged accounts</li>
+          <li>Reduces account compromise risk through MFA</li>
+          <li>Blocks older sign-in methods that bypass modern controls</li>
+          <li>Prevents tenant lockout through break-glass planning</li>
+          <li>Supports safer rollout with report-only testing</li>
+          <li>Creates documentation for security reviews and audits</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>What I Built</h2>
+
+      <ul class="case-list">
+        <li>Designed a Conditional Access policy matrix.</li>
+        <li>Documented an MFA enforcement strategy for administrators and standard users.</li>
+        <li>Created a break-glass account exclusion plan.</li>
+        <li>Created a rollback plan for safe policy recovery.</li>
+        <li>Created a report-only rollout and testing strategy.</li>
+        <li>Documented licensing and support limitations from the lab environment.</li>
+        <li>Collected screenshots as evidence of planning constraints and tenant limitations.</li>
+        <li>Mapped each planned policy to a security purpose and operational risk.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Screenshots and Evidence</h2>
+    <p class="section-subtitle">
+      These screenshots show the lab limitations and evidence collected while documenting the Conditional Access design and rollout plan.
+    </p>
+
+    <div class="screenshot-grid">
+
+      <article class="screenshot-card">
+        <img src="../assets/conditional-access/ca-license-warning.png" alt="Conditional Access license warning screenshot">
+        <div>
+          <h3>Conditional Access License Warning</h3>
+          <p>Evidence showing that live Conditional Access deployment was limited by tenant licensing.</p>
+        </div>
+      </article>
+
+      <article class="screenshot-card">
+        <img src="../assets/conditional-access/billing-profile-error.png" alt="Billing profile error screenshot">
+        <div>
+          <h3>Billing Profile Error</h3>
+          <p>Evidence showing billing profile setup limitations in the lab tenant.</p>
+        </div>
+      </article>
+
+      <article class="screenshot-card">
+        <img src="../assets/conditional-access/support-request-permission-error.png" alt="Support request permission error screenshot">
+        <div>
+          <h3>Support Request Permission Error</h3>
+          <p>Evidence showing support request limitations when attempting to resolve lab tenant licensing issues.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>Planned Conditional Access Policy Matrix</h2>
+
+      <ul class="case-list">
+        <li>
+          <strong>Policy 1: Require MFA for Administrators</strong><br>
+          Require privileged and administrator users to complete MFA before accessing cloud resources.
+        </li>
+
+        <li>
+          <strong>Policy 2: Require MFA for All Users</strong><br>
+          Require standard users to complete MFA when accessing Microsoft cloud applications.
+        </li>
+
+        <li>
+          <strong>Policy 3: Block Legacy Authentication</strong><br>
+          Block older authentication methods that do not support modern security controls.
+        </li>
+
+        <li>
+          <strong>Policy 4: Require MFA for Sensitive Groups</strong><br>
+          Apply stronger access requirements to sensitive groups such as Finance, HR, IT Admins, and Contractors.
+        </li>
+
+        <li>
+          <strong>Policy 5: Break-Glass Account Exclusion</strong><br>
+          Document emergency administrator account exclusions to reduce the risk of total tenant lockout.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Rollout Strategy</h2>
+        <p>
+          The planned rollout starts with documentation and report-only testing before enforcement. This helps identify possible user impact, sign-in failures, or policy conflicts before the organization turns on enforcement.
+        </p>
+
+        <ul class="case-list">
+          <li>Document the policy purpose and target users.</li>
+          <li>Exclude emergency break-glass accounts.</li>
+          <li>Start in report-only mode where available.</li>
+          <li>Review sign-in results and expected impact.</li>
+          <li>Test with pilot users or groups before broad rollout.</li>
+          <li>Move to enforcement only after validating expected behavior.</li>
+        </ul>
+      </article>
+
+      <article class="case-card">
+        <h2>Rollback Plan</h2>
+        <p>
+          A rollback plan is important because Conditional Access mistakes can block legitimate access. The rollback plan gives administrators a safe recovery path if a policy causes unexpected issues.
+        </p>
+
+        <ul class="case-list">
+          <li>Keep at least one emergency break-glass account excluded.</li>
+          <li>Document who can disable or modify the policy.</li>
+          <li>Record the policy settings before changes.</li>
+          <li>Disable the policy if it causes unexpected access issues.</li>
+          <li>Review sign-in logs and adjust conditions before re-enabling.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Break-Glass Account Planning</h2>
+        <p>
+          Break-glass accounts are emergency administrator accounts used when normal administrator access is unavailable. They should be carefully protected, monitored, and excluded from certain policies so the organization does not lose all administrative access.
+        </p>
+
+        <ul class="case-list">
+          <li>Use a dedicated emergency administrator account.</li>
+          <li>Exclude it from Conditional Access policies that could block access.</li>
+          <li>Protect it with strong credentials and monitoring.</li>
+          <li>Restrict usage to emergency situations only.</li>
+          <li>Review and document access regularly.</li>
+        </ul>
+      </article>
+
+      <aside class="case-card">
+        <h2>Skills Demonstrated</h2>
+
+        <div class="badge-row">
+          <span class="badge">Conditional Access Planning</span>
+          <span class="badge">MFA Strategy</span>
+          <span class="badge">Security Baseline Design</span>
+          <span class="badge">Break-Glass Planning</span>
+          <span class="badge">Legacy Auth Blocking</span>
+          <span class="badge">Report-Only Rollout</span>
+          <span class="badge">Rollback Planning</span>
+          <span class="badge">Limitation Documentation</span>
+          <span class="badge">Audit Evidence</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>Resume Bullet</h2>
+
+      <div class="resume-bullet">
+        Designed a Microsoft Entra Conditional Access security baseline with MFA enforcement strategy, admin protection, legacy authentication blocking, break-glass planning, report-only rollout strategy, rollback documentation, and licensing limitation evidence.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="skill-panel">
+      <h2 class="section-title">Recruiter Takeaway</h2>
+      <p class="section-subtitle">
+        This project shows that I understand how to plan Conditional Access safely, not just click through a policy screen. It demonstrates MFA planning, administrator protection, break-glass exclusions, rollout strategy, rollback planning, and documentation of real-world implementation limitations.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn btn-secondary" href="../resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="../contact.html">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Nicholas Tjhung · IAM Portfolio</p>
+  </div>
+</footer>
+
+</body>
+</html>
