@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entra ID User Lifecycle Automation | Nicholas Tjhung</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="avatar-small">NT</span>
+      <span>Nicholas Tjhung</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+      <a href="https://github.com/ntjhung">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">IAM Case Study</p>
+
+      <h1>Entra ID User Lifecycle Automation</h1>
+
+      <p class="hero-subtitle">
+        A hands-on Microsoft Entra ID lab demonstrating user onboarding, group-based access, offboarding, PowerShell automation, Microsoft Graph concepts, and audit evidence documentation.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn btn-secondary" href="../resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="../contact.html">Contact Me</a>
+      </div>
+    </div>
+
+    <aside class="profile-card">
+      <div class="avatar-large">JML</div>
+      <h2>Project Focus</h2>
+      <p>Joiner | Mover | Leaver | Access Control | Audit Evidence</p>
+
+      <div class="icon-row">
+        <span class="icon-pill">Entra ID</span>
+        <span class="icon-pill">PowerShell</span>
+        <span class="icon-pill">Graph</span>
+        <span class="icon-pill">IAM</span>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Project Summary</h2>
+        <p>
+          This project demonstrates a basic Identity and Access Management user lifecycle workflow using Microsoft Entra ID. The lab simulates how an organization can onboard users, assign group-based access, document access controls, and offboard users when access is no longer needed.
+        </p>
+
+        <p>
+          The goal was to show practical IAM work that maps to real business needs: creating users, assigning the correct access, documenting the access model, removing access during offboarding, and saving screenshots as audit evidence.
+        </p>
+      </article>
+
+      <aside class="case-card">
+        <h2>Tools Used</h2>
+
+        <div class="badge-row">
+          <span class="badge">Microsoft Entra ID</span>
+          <span class="badge">PowerShell</span>
+          <span class="badge">Microsoft Graph</span>
+          <span class="badge">CSV</span>
+          <span class="badge">Security Groups</span>
+          <span class="badge">Audit Evidence</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Business Problem</h2>
+        <p>
+          Companies need a repeatable process for onboarding, updating, and offboarding users. Without a consistent process, users may receive incorrect access, keep access longer than needed, or create audit and security risks.
+        </p>
+
+        <p>
+          A good IAM process helps reduce unnecessary access, supports least privilege, improves audit readiness, and gives IT teams a clearer way to prove that access was assigned and removed correctly.
+        </p>
+      </article>
+
+      <aside class="case-card">
+        <h2>Why It Matters</h2>
+        <ul class="case-list">
+          <li>Reduces access mistakes during onboarding</li>
+          <li>Supports group-based access control</li>
+          <li>Improves offboarding consistency</li>
+          <li>Creates evidence for audits and reviews</li>
+          <li>Helps enforce least privilege</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>What I Built</h2>
+
+      <ul class="case-list">
+        <li>Created sample users in Microsoft Entra ID.</li>
+        <li>Created department-based security groups.</li>
+        <li>Assigned users to groups based on role and department.</li>
+        <li>Created a Joiner-Mover-Leaver runbook.</li>
+        <li>Created an offboarding checklist.</li>
+        <li>Created an access control matrix.</li>
+        <li>Collected screenshots as audit evidence.</li>
+        <li>Documented how the process supports onboarding, access changes, and offboarding.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Screenshots and Evidence</h2>
+    <p class="section-subtitle">
+      These screenshots show the lab environment, users, group membership, and automation output used as project evidence.
+    </p>
+
+    <div class="screenshot-grid">
+
+      <article class="screenshot-card">
+        <img src="../assets/entra-lifecycle/users-list.png" alt="Entra ID users list screenshot">
+        <div>
+          <h3>Users Created</h3>
+          <p>Sample users created in Microsoft Entra ID to support the lifecycle workflow.</p>
+        </div>
+      </article>
+
+      <article class="screenshot-card">
+        <img src="../assets/entra-lifecycle/hr-group-members.png" alt="HR group members screenshot">
+        <div>
+          <h3>HR Group Membership</h3>
+          <p>Department-based group membership used to demonstrate group-based access control.</p>
+        </div>
+      </article>
+
+      <article class="screenshot-card">
+        <img src="../assets/entra-lifecycle/powershell-output.png" alt="PowerShell success output screenshot">
+        <div>
+          <h3>PowerShell Output</h3>
+          <p>PowerShell output used as automation and audit evidence for the lab.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Joiner Process</h2>
+        <p>
+          A joiner is a new employee or contractor who needs access. The process includes creating the user account, assigning department-based access, requiring MFA registration, and documenting the request.
+        </p>
+
+        <ul class="case-list">
+          <li>Create or import the user account.</li>
+          <li>Assign the user to the correct department group.</li>
+          <li>Confirm the access matches the user’s role.</li>
+          <li>Require MFA registration.</li>
+          <li>Save screenshots or reports as evidence.</li>
+        </ul>
+      </article>
+
+      <article class="case-card">
+        <h2>Mover Process</h2>
+        <p>
+          A mover is an existing user who changes roles or departments. The process includes reviewing current group memberships, adding new required access, and removing access that is no longer needed.
+        </p>
+
+        <ul class="case-list">
+          <li>Review current group membership.</li>
+          <li>Identify new access needed for the new role.</li>
+          <li>Remove old access that is no longer justified.</li>
+          <li>Document the access change.</li>
+          <li>Save before-and-after evidence.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Leaver Process</h2>
+        <p>
+          A leaver is a user who leaves the organization. The process includes disabling the account, revoking sessions, resetting the password, removing group memberships, and saving evidence.
+        </p>
+
+        <ul class="case-list">
+          <li>Disable the user account.</li>
+          <li>Revoke active sessions.</li>
+          <li>Reset the password if needed.</li>
+          <li>Remove group memberships.</li>
+          <li>Document completion of access removal.</li>
+          <li>Save screenshots or reports as audit evidence.</li>
+        </ul>
+      </article>
+
+      <aside class="case-card">
+        <h2>Skills Demonstrated</h2>
+
+        <div class="badge-row">
+          <span class="badge">User Lifecycle Management</span>
+          <span class="badge">Group-Based Access</span>
+          <span class="badge">IAM Automation</span>
+          <span class="badge">PowerShell</span>
+          <span class="badge">Microsoft Graph</span>
+          <span class="badge">Least Privilege</span>
+          <span class="badge">Audit Evidence</span>
+          <span class="badge">IAM Documentation</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>Resume Bullet</h2>
+
+      <div class="resume-bullet">
+        Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Microsoft Graph to simulate onboarding, group assignment, access removal, and audit evidence collection.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="skill-panel">
+      <h2 class="section-title">Recruiter Takeaway</h2>
+      <p class="section-subtitle">
+        This project shows that I understand the full IAM user lifecycle: onboarding users, assigning access through groups, documenting access decisions, removing access during offboarding, and collecting evidence that can support audits or access reviews.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn btn-secondary" href="../resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="../contact.html">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Nicholas Tjhung · IAM Portfolio</p>
+  </div>
+</footer>
+
+</body>
+</html>
