@@ -186,7 +186,7 @@ I’m an IT professional with 5+ years of systems administration experience, foc
 
     </div>
   </section>
-## Featured IAM Projects
+
 
   <section class="section">
     <div class="skill-panel">
@@ -214,7 +214,30 @@ I’m an IT professional with 5+ years of systems administration experience, foc
       </div>
     </div>
   </section>
+  
+  <section class="section">
+    <h2 class="section-title">Certifications</h2>
 
+    <div class="cert-grid">
+      <div class="cert-card">Microsoft 365 Certified: Administrator Expert</div>
+      <div class="cert-card">Microsoft Certified: Cybersecurity Architect Expert</div>
+      <div class="cert-card">Microsoft Certified: Identity and Access Administrator Associate</div>
+      <div class="cert-card">Microsoft Certified: Azure Administrator Associate</div>
+      <div class="cert-card">Microsoft Certified: Azure Fundamentals</div>
+      <div class="cert-card">Certified ScrumMaster</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Nicholas Tjhung · IAM Portfolio</p>
+  </div>
+</footer>
+
+
+  
+## Featured IAM Projects
 ---
 
 ## 1. Entra ID User Lifecycle Automation
