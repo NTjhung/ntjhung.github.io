@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identity Governance Access Review | Nicholas Tjhung</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="avatar-small">NT</span>
+      <span>Nicholas Tjhung</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+      <a href="https://github.com/ntjhung">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero" style="grid-template-columns: 1fr; max-width: 980px;">
+    <div>
+      <p class="eyebrow">IAM Case Study</p>
+
+      <h1>Identity Governance Access Review Simulation</h1>
+
+      <p class="hero-subtitle">
+        A manual identity governance access review project focused on group membership review, reviewer decisions, remediation tracking, least privilege analysis, and audit evidence documentation.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge">Identity Governance</span>
+        <span class="badge">Access Reviews</span>
+        <span class="badge">Least Privilege</span>
+        <span class="badge">Group Membership</span>
+        <span class="badge">Remediation Tracking</span>
+        <span class="badge">Audit Evidence</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn btn-secondary" href="../resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="../contact.html">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Project Summary</h2>
+        <p>
+          This project demonstrates a manual identity governance access review process. The lab simulates how an IAM team can review user access, collect reviewer decisions, track remediation, and prepare audit evidence.
+        </p>
+
+        <p>
+          This project does not require Microsoft Entra ID P1 or P2 licensing. Instead of using the built-in Microsoft Entra access review feature, this lab uses a manual review process based on group membership review, reviewer instructions, decision tracking, remediation documentation, and audit evidence.
+        </p>
+      </article>
+
+      <aside class="case-card">
+        <h2>Tools and Concepts</h2>
+
+        <div class="badge-row">
+          <span class="badge">Microsoft Entra ID</span>
+          <span class="badge">Security Groups</span>
+          <span class="badge">Manual Access Review</span>
+          <span class="badge">Reviewer Instructions</span>
+          <span class="badge">Risk Matrix</span>
+          <span class="badge">Remediation Tracker</span>
+          <span class="badge">Audit Evidence</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Business Problem</h2>
+        <p>
+          Organizations need to regularly confirm that users still require access to sensitive systems, groups, and applications. Without regular access reviews, users may keep access they no longer need, which increases security, compliance, and audit risk.
+        </p>
+
+        <p>
+          A repeatable access review process helps reduce excessive permissions, supports least privilege, documents reviewer decisions, and gives IT teams evidence that access is being reviewed and corrected.
+        </p>
+      </article>
+
+      <aside class="case-card">
+        <h2>Why It Matters</h2>
+        <ul class="case-list">
+          <li>Reduces unnecessary or outdated access</li>
+          <li>Supports least privilege and access hygiene</li>
+          <li>Creates evidence for audits and compliance reviews</li>
+          <li>Identifies privileged access that needs validation</li>
+          <li>Tracks remediation when access should be removed</li>
+          <li>Helps standardize access review decisions</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>What I Built</h2>
+
+      <ul class="case-list">
+        <li>Created a manual access review plan.</li>
+        <li>Created reviewer instructions for approving, removing, or escalating access.</li>
+        <li>Created sample access review data.</li>
+        <li>Reviewed HR, Finance, IT Admin, and Contractor groups.</li>
+        <li>Built a remediation tracker for users requiring follow-up.</li>
+        <li>Built an access review risk matrix.</li>
+        <li>Created an audit evidence packet.</li>
+        <li>Collected group membership screenshots as evidence.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Screenshots and Evidence</h2>
+    <p class="section-subtitle">
+      These screenshots show group membership evidence used to support the manual access review process.
+    </p>
+
+    <div class="screenshot-grid">
+
+      <article class="screenshot-card">
+        <img src="../assets/access-review/finance-access-review-members.png" alt="Finance access review members screenshot">
+        <div>
+          <h3>Finance Group Access Review</h3>
+          <p>Finance group membership evidence used to validate whether users still require access.</p>
+        </div>
+      </article>
+
+      <article class="screenshot-card">
+        <img src="../assets/access-review/it-admins-access-review-members.png" alt="IT admins access review members screenshot">
+        <div>
+          <h3>IT Admins Access Review</h3>
+          <p>Privileged group membership evidence used to identify accounts needing additional review.</p>
+        </div>
+      </article>
+
+      <article class="screenshot-card">
+        <img src="../assets/access-review/contractors-access-review-members.png" alt="Contractors access review members screenshot">
+        <div>
+          <h3>Contractors Access Review</h3>
+          <p>Contractor group membership evidence used to identify access that may need removal.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Review Scope</h2>
+        <p>
+          The review evaluated whether users still needed access based on department, job role, contractor status, privileged access risk, business need, and least privilege.
+        </p>
+
+        <ul class="case-list">
+          <li>HR group access</li>
+          <li>Finance group access</li>
+          <li>IT Admin group access</li>
+          <li>Contractor group access</li>
+          <li>Privileged access risk</li>
+          <li>Business need and least privilege</li>
+        </ul>
+      </article>
+
+      <article class="case-card">
+        <h2>Review Decision Options</h2>
+
+        <ul class="case-list">
+          <li>
+            <strong>Approve:</strong> User still needs access based on role, department, or business need.
+          </li>
+          <li>
+            <strong>Remove:</strong> User no longer needs access or access no longer appears justified.
+          </li>
+          <li>
+            <strong>Review Further:</strong> More information is needed before approving or removing access.
+          </li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Review Results Summary</h2>
+        <p>
+          The simulated review results were documented to show how access review decisions can be tracked for audit and remediation.
+        </p>
+
+        <ul class="case-list">
+          <li><strong>Approve:</strong> 6 users</li>
+          <li><strong>Remove:</strong> 1 user</li>
+          <li><strong>Review Further:</strong> 1 user</li>
+        </ul>
+      </article>
+
+      <article class="case-card">
+        <h2>Items Requiring Follow-Up</h2>
+
+        <ul class="case-list">
+          <li>
+            <strong>Carlos Ramirez — SG-IT-Admins:</strong> Validate continued need for privileged access.
+          </li>
+          <li>
+            <strong>Dana Smith — SG-Contractors:</strong> Remove contractor access.
+          </li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-layout">
+
+      <article class="case-card">
+        <h2>Remediation Process</h2>
+        <p>
+          Access reviews are only useful if the team follows through on removal or follow-up decisions. This project includes a remediation process to document what should happen after the review.
+        </p>
+
+        <ul class="case-list">
+          <li>Confirm reviewer decision.</li>
+          <li>Validate whether access is still required.</li>
+          <li>Remove access when no longer justified.</li>
+          <li>Document the removal action.</li>
+          <li>Save screenshots or reports as evidence.</li>
+          <li>Track unresolved items until completion.</li>
+        </ul>
+      </article>
+
+      <aside class="case-card">
+        <h2>Skills Demonstrated</h2>
+
+        <div class="badge-row">
+          <span class="badge">Identity Governance</span>
+          <span class="badge">Access Reviews</span>
+          <span class="badge">Least Privilege Analysis</span>
+          <span class="badge">Group Membership Review</span>
+          <span class="badge">Risk-Based Review</span>
+          <span class="badge">Remediation Tracking</span>
+          <span class="badge">Audit Evidence</span>
+          <span class="badge">IAM Documentation</span>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="case-card">
+      <h2>Resume Bullet</h2>
+
+      <div class="resume-bullet">
+        Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="skill-panel">
+      <h2 class="section-title">Recruiter Takeaway</h2>
+      <p class="section-subtitle">
+        This project shows that I understand access reviews beyond just clicking a tool button. It demonstrates how to define review scope, collect group membership evidence, document reviewer decisions, identify risky or unnecessary access, track remediation, and prepare audit-ready IAM documentation.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../projects.html">Back to Projects</a>
+        <a class="btn btn-secondary" href="../resume.html">View Resume</a>
+        <a class="btn btn-secondary" href="../contact.html">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Nicholas Tjhung · IAM Portfolio</p>
+  </div>
+</footer>
+
+</body>
+</html>
