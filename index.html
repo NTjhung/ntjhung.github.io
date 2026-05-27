@@ -1,266 +1,357 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nicholas Tjhung | IAM Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #111827;
+    --card-soft: #1e293b;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --accent-2: #22c55e;
+    --border: #334155;
+  }
 
-<body>
+  body {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #020617 100%);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
 
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="avatar-small">NT</span>
-      <span>Nicholas Tjhung</span>
-    </a>
+  .page-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 18px 60px;
+  }
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://github.com/ntjhung">GitHub</a>
-    </nav>
+  .hero {
+    background: linear-gradient(135deg, rgba(56,189,248,.18), rgba(34,197,94,.12));
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 34px;
+    margin-bottom: 28px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+  }
+
+  .hero h1 {
+    margin-top: 0;
+    font-size: 2.4rem;
+    line-height: 1.15;
+  }
+
+  .hero p {
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links a,
+  .button-link {
+    display: inline-block;
+    background: var(--accent);
+    color: #00111f !important;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 14px;
+    border-radius: 12px;
+  }
+
+  .nav-links a.secondary,
+  .button-link.secondary {
+    background: transparent;
+    color: var(--text) !important;
+    border: 1px solid var(--border);
+  }
+
+  .section-title {
+    margin: 34px 0 18px;
+    font-size: 1.8rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .project-card {
+    background: rgba(17,24,39,.92);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0,0,0,.22);
+  }
+
+  .project-card-content {
+    padding: 24px;
+  }
+
+  .project-card h2 {
+    margin-top: 0;
+    font-size: 1.45rem;
+  }
+
+  .project-card p {
+    color: var(--muted);
+  }
+
+  .project-card img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: contain;
+    background: #020617;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .badge {
+    background: rgba(56,189,248,.12);
+    color: #bae6fd;
+    border: 1px solid rgba(56,189,248,.35);
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: .86rem;
+    font-weight: 600;
+  }
+
+  .badge.green {
+    background: rgba(34,197,94,.12);
+    color: #bbf7d0;
+    border-color: rgba(34,197,94,.35);
+  }
+
+  .skills-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 24px;
+    margin-top: 26px;
+  }
+
+  .skills-list {
+    columns: 2;
+    color: var(--muted);
+  }
+
+  .cert-list,
+  .role-list {
+    color: var(--muted);
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      padding: 24px;
+    }
+
+    .hero h1 {
+      font-size: 1.9rem;
+    }
+
+    .skills-list {
+      columns: 1;
+    }
+  }
+</style>
+
+<div class="page-wrap">
+
+<section class="hero">
+
+# Identity and Access Management Portfolio
+
+Identity and Access Management portfolio focused on **Microsoft Entra ID, Okta, Conditional Access, access reviews, Microsoft Graph, PowerShell, and IAM automation**.
+
+I’m an IT professional with 10+ years of systems administration experience, focused on Identity and Access Management and Microsoft identity technologies. My hands-on portfolio includes Microsoft Entra ID, Okta, MFA, Conditional Access, identity governance, access reviews, Microsoft Graph reporting, PowerShell automation, and audit evidence documentation.
+
+I hold Microsoft certifications including **Microsoft 365 Certified: Administrator Expert**, **Microsoft Certified: Cybersecurity Architect Expert**, **Microsoft Certified: Identity and Access Administrator Associate**, **Microsoft Certified: Azure Administrator Associate**, **Microsoft Certified: Azure Fundamentals**, and **Certified ScrumMaster**.
+
+<div class="nav-links">
+  <a href="projects.html">Projects</a>
+  <a href="resume.html" class="secondary">Resume</a>
+  <a href="contact.html" class="secondary">Contact</a>
+  <a href="https://github.com/ntjhung" class="secondary">GitHub Profile</a>
+</div>
+
+</section>
+
+<h2 class="section-title">Featured IAM Projects</h2>
+
+<div class="project-grid">
+
+<section class="project-card">
+  <div class="project-card-content">
+    <h2>1. Entra ID User Lifecycle Automation</h2>
+    <p>Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Microsoft Graph to simulate onboarding, group assignment, access removal, and audit evidence collection.</p>
+    <div class="badges">
+      <span class="badge">Microsoft Entra ID</span>
+      <span class="badge">PowerShell</span>
+      <span class="badge">Microsoft Graph</span>
+      <span class="badge green">Lifecycle Automation</span>
+      <span class="badge">Audit Evidence</span>
+    </div>
   </div>
-</header>
-
-<main class="container">
-
-  <section class="hero">
-    <div>
-      <p class="eyebrow">Identity & Access Management Portfolio</p>
-
-      <h1>Microsoft Entra ID, Okta, and IAM Security Projects</h1>
-
-      <p class="hero-subtitle">
-        IT professional with 10+ years of systems administration experience and hands-on IAM projects covering Microsoft Entra ID, Okta, Conditional Access, MFA, access reviews, Microsoft Graph, PowerShell automation, and audit evidence documentation.
-      </p>
-
-      <div class="cta-row">
-        <a class="btn btn-primary" href="projects.html">View Projects</a>
-        <a class="btn btn-secondary" href="resume.html">View Resume</a>
-        <a class="btn btn-secondary" href="contact.html">Contact Me</a>
-      </div>
-    </div>
-
-    <aside class="profile-card">
-      <div class="avatar-large">NT</div>
-
-      <!-- Later, if you upload a headshot, replace the avatar above with this:
-      <img src="assets/headshot.jpg" alt="Nicholas Tjhung headshot" class="avatar-img">
-      -->
-
-      <h2>Nicholas Tjhung</h2>
-      <p>IAM | Entra ID | Okta | Microsoft 365 Security</p>
-
-      <div class="icon-row">
-        <span class="icon-pill">Microsoft</span>
-        <span class="icon-pill">Okta</span>
-        <span class="icon-pill">GitHub</span>
-        <span class="icon-pill">LinkedIn</span>
-      </div>
-    </aside>
-  </section>
-
-  <section class="section">
-    <div class="skill-panel">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-subtitle">
-        I’m an IT professional with 5+ years of systems administration experience, focused on Identity and Access Management and Microsoft identity technologies. My hands-on portfolio includes Microsoft Entra ID, Okta, MFA, Conditional Access planning, identity governance, access reviews, Microsoft Graph reporting, PowerShell automation, and audit evidence documentation.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2 class="section-title">Featured IAM Projects</h2>
-    <p class="section-subtitle">
-      Hands-on identity and access management projects built to demonstrate job-ready Microsoft Entra ID, Okta, PowerShell, Microsoft Graph, IAM documentation, audit evidence, and security administration skills.
-    </p>
-
-    <div class="project-grid">
-
-      <article class="project-card">
-        <img src="assets/entra-lifecycle/users-list.png" alt="Entra ID users list screenshot" class="project-thumb">
-
-        <div class="project-content">
-          <h3>Entra ID User Lifecycle Automation</h3>
-          <p>
-            Built a Microsoft Entra ID user lifecycle automation lab using PowerShell and Microsoft Graph to simulate onboarding, group assignment, access removal, and audit evidence collection.
-          </p>
-
-          <div class="badge-row">
-            <span class="badge">Entra ID</span>
-            <span class="badge">PowerShell</span>
-            <span class="badge">Microsoft Graph</span>
-            <span class="badge">Onboarding</span>
-            <span class="badge">Offboarding</span>
-          </div>
-
-          <div class="card-actions">
-            <a class="card-link" href="case-studies/entra-lifecycle.html">View Case Study →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/conditional-access/ca-license-warning.png" alt="Conditional Access licensing warning screenshot" class="project-thumb">
-
-        <div class="project-content">
-          <h3>Conditional Access Security Baseline</h3>
-          <p>
-            Designed a Microsoft Entra Conditional Access security baseline with MFA enforcement strategy, admin protection, legacy authentication blocking, break-glass planning, report-only rollout strategy, rollback documentation, and licensing limitation evidence.
-          </p>
-
-          <div class="badge-row">
-            <span class="badge">Conditional Access</span>
-            <span class="badge">MFA</span>
-            <span class="badge">Break-glass</span>
-            <span class="badge">Security Policy</span>
-          </div>
-
-          <div class="card-actions">
-            <a class="card-link" href="case-studies/conditional-access.html">View Case Study →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/access-review/finance-access-review-members.png" alt="Finance access review members screenshot" class="project-thumb">
-
-        <div class="project-content">
-          <h3>Identity Governance Access Review</h3>
-          <p>
-            Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.
-          </p>
-
-          <div class="badge-row">
-            <span class="badge">Access Reviews</span>
-            <span class="badge">Identity Governance</span>
-            <span class="badge">Least Privilege</span>
-            <span class="badge">Audit Evidence</span>
-          </div>
-
-          <div class="card-actions">
-            <a class="card-link" href="case-studies/access-review.html">View Case Study →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/okta/okta-app-group-assignment.png" alt="Okta app group assignment screenshot" class="project-thumb">
-
-        <div class="project-content">
-          <h3>Okta SSO and MFA Lab</h3>
-          <p>
-            Built an Okta SSO and MFA lab with users, groups, group-based application assignment, MFA policy documentation, access control planning, troubleshooting notes, and audit evidence screenshots.
-          </p>
-
-          <div class="badge-row">
-            <span class="badge">Okta</span>
-            <span class="badge">SSO</span>
-            <span class="badge">MFA</span>
-            <span class="badge">Group Assignment</span>
-          </div>
-
-          <div class="card-actions">
-            <a class="card-link" href="case-studies/okta.html">View Case Study →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/graph-reporting/group-membership-report-preview.png" alt="Microsoft Graph group membership report preview screenshot" class="project-thumb">
-
-        <div class="project-content">
-          <h3>Microsoft Graph IAM Reporting</h3>
-          <p>
-            Built a Microsoft Graph IAM reporting automation project using PowerShell and REST API calls to export Microsoft Entra ID users, groups, group memberships, and audit evidence reports for access review support.
-          </p>
-
-          <div class="badge-row">
-            <span class="badge">Microsoft Graph</span>
-            <span class="badge">REST API</span>
-            <span class="badge">CSV Reports</span>
-            <span class="badge">PowerShell</span>
-          </div>
-
-          <div class="card-actions">
-            <a class="card-link" href="case-studies/graph-reporting.html">View Case Study →</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="skill-panel">
-      <h2 class="section-title">Core IAM Skills</h2>
-      <p class="section-subtitle">
-        Skills demonstrated across the portfolio projects.
-      </p>
-
-      <div class="badge-row">
-        <span class="badge">Microsoft Entra ID</span>
-        <span class="badge">Okta</span>
-        <span class="badge">Microsoft Graph</span>
-        <span class="badge">PowerShell</span>
-        <span class="badge">MFA</span>
-        <span class="badge">Conditional Access Planning</span>
-        <span class="badge">Access Reviews</span>
-        <span class="badge">Identity Governance</span>
-        <span class="badge">RBAC</span>
-        <span class="badge">Group-Based Access Control</span>
-        <span class="badge">User Provisioning</span>
-        <span class="badge">Deprovisioning</span>
-        <span class="badge">IAM Documentation</span>
-        <span class="badge">Audit Evidence</span>
-        <span class="badge">CSV Reporting</span>
-        <span class="badge">Troubleshooting</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2 class="section-title">Certifications</h2>
-    <p class="section-subtitle">
-      Microsoft identity, cloud administration, security architecture, and project delivery certifications.
-    </p>
-
-    <div class="cert-grid">
-      <div class="cert-card">Microsoft 365 Certified: Administrator Expert</div>
-      <div class="cert-card">Microsoft Certified: Cybersecurity Architect Expert</div>
-      <div class="cert-card">Microsoft Certified: Identity and Access Administrator Associate</div>
-      <div class="cert-card">Microsoft Certified: Azure Administrator Associate</div>
-      <div class="cert-card">Microsoft Certified: Azure Fundamentals</div>
-      <div class="cert-card">Certified ScrumMaster</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="skill-panel">
-      <h2 class="section-title">Recruiter Summary</h2>
-      <p class="section-subtitle">
-        Open to remote IAM Analyst, Identity Governance, Entra ID Administrator, Okta Administrator, Microsoft 365 Administrator, and Security Administration roles.
-      </p>
-
-      <div class="cta-row">
-        <a class="btn btn-primary" href="projects.html">See Project Work</a>
-        <a class="btn btn-secondary" href="resume.html">View Resume</a>
-        <a class="btn btn-secondary" href="contact.html">Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 Nicholas Tjhung · IAM Portfolio</p>
+  <img src="assets/entra-lifecycle/users-list.png" alt="Microsoft Entra ID users list screenshot">
+  <div class="project-card-content">
+    <a class="button-link" href="case-studies/entra-lifecycle.html">View Case Study</a>
   </div>
-</footer>
+</section>
 
-</body>
-</html>
+<section class="project-card">
+  <div class="project-card-content">
+    <h2>2. Conditional Access Security Baseline</h2>
+    <p>Designed and configured Microsoft Entra Conditional Access policies in report-only mode, including administrator MFA, pilot user MFA, legacy authentication blocking, sensitive group protection, break-glass account exclusions, testing strategy, rollback planning, and audit evidence documentation.</p>
+    <div class="badges">
+      <span class="badge">Conditional Access</span>
+      <span class="badge">MFA</span>
+      <span class="badge">Report-Only Mode</span>
+      <span class="badge green">Break-Glass Planning</span>
+      <span class="badge">Rollback Planning</span>
+    </div>
+  </div>
+  <img src="assets/conditional-access/conditional-access-policy-list.png" alt="Conditional Access policy list screenshot">
+  <div class="project-card-content">
+    <a class="button-link" href="case-studies/conditional-access.html">View Case Study</a>
+  </div>
+</section>
+
+<section class="project-card">
+  <div class="project-card-content">
+    <h2>3. Identity Governance Access Review Simulation</h2>
+    <p>Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.</p>
+    <div class="badges">
+      <span class="badge">Identity Governance</span>
+      <span class="badge">Access Reviews</span>
+      <span class="badge">Least Privilege</span>
+      <span class="badge green">Remediation Tracking</span>
+      <span class="badge">Audit Evidence</span>
+    </div>
+  </div>
+  <img src="assets/access-review/finance-access-review-members.png" alt="Finance access review members screenshot">
+  <div class="project-card-content">
+    <a class="button-link" href="case-studies/access-review.html">View Case Study</a>
+  </div>
+</section>
+
+<section class="project-card">
+  <div class="project-card-content">
+    <h2>4. Okta SSO and MFA Integration Lab</h2>
+    <p>Built an Okta SSO and MFA lab with users, groups, group-based application assignment, MFA policy documentation, access control planning, troubleshooting notes, and audit evidence screenshots.</p>
+    <div class="badges">
+      <span class="badge">Okta</span>
+      <span class="badge">SSO</span>
+      <span class="badge">MFA</span>
+      <span class="badge green">Group-Based Assignment</span>
+      <span class="badge">IAM Troubleshooting</span>
+    </div>
+  </div>
+  <img src="assets/okta/okta-app-group-assignment.png" alt="Okta app group assignment screenshot">
+  <div class="project-card-content">
+    <a class="button-link" href="case-studies/okta.html">View Case Study</a>
+  </div>
+</section>
+
+<section class="project-card">
+  <div class="project-card-content">
+    <h2>5. Microsoft Graph IAM Reporting Automation</h2>
+    <p>Built a Microsoft Graph IAM reporting automation project using PowerShell and REST API calls to export Microsoft Entra ID users, groups, group memberships, and audit evidence reports for access review support.</p>
+    <div class="badges">
+      <span class="badge">Microsoft Graph</span>
+      <span class="badge">PowerShell</span>
+      <span class="badge">REST API</span>
+      <span class="badge green">CSV Reporting</span>
+      <span class="badge">Audit Evidence</span>
+    </div>
+  </div>
+  <img src="assets/graph-reporting/group-membership-report-preview.png" alt="Microsoft Graph group membership report preview screenshot">
+  <div class="project-card-content">
+    <a class="button-link" href="case-studies/graph-reporting.html">View Case Study</a>
+  </div>
+</section>
+
+</div>
+
+<section class="skills-box">
+
+## Core Skills
+
+<div class="skills-list">
+
+- Microsoft Entra ID
+- Okta
+- Microsoft Graph
+- PowerShell
+- MFA
+- Conditional Access
+- Report-Only Policy Testing
+- Break-Glass Account Planning
+- Access Reviews
+- Identity Governance
+- RBAC
+- Group-Based Access Control
+- User Provisioning
+- Deprovisioning
+- Joiner-Mover-Leaver Workflows
+- IAM Documentation
+- Audit Evidence
+- CSV Reporting
+- Troubleshooting
+
+</div>
+
+</section>
+
+<section class="skills-box">
+
+## Certifications
+
+<div class="cert-list">
+
+- Microsoft 365 Certified: Administrator Expert
+- Microsoft Certified: Cybersecurity Architect Expert
+- Microsoft Certified: Identity and Access Administrator Associate
+- Microsoft Certified: Azure Administrator Associate
+- Microsoft Certified: Azure Fundamentals
+- Certified ScrumMaster
+
+</div>
+
+</section>
+
+<section class="skills-box">
+
+## Target Roles
+
+<div class="role-list">
+
+- IAM Engineer
+- Microsoft Identity Engineer
+- Identity and Access Management Engineer
+- Entra ID Administrator
+- Microsoft 365 Identity Administrator
+- Okta Administrator
+- Identity Governance Analyst
+- IAM Operations Analyst
+- User Access Analyst
+- Access Review Analyst
+
+</div>
+
+</section>
+
+</div>
