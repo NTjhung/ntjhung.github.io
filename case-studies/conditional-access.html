@@ -1,370 +1,315 @@
-<style>
-  :root {
-    --bg: #0f172a;
-    --card: #111827;
-    --card-soft: #1e293b;
-    --text: #e5e7eb;
-    --muted: #94a3b8;
-    --accent: #38bdf8;
-    --accent-2: #22c55e;
-    --border: #334155;
-  }
-
-  body {
-    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #020617 100%);
-    color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-  }
-
-  .page-wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 28px 18px 60px;
-  }
-
-  .hero {
-    background: linear-gradient(135deg, rgba(56,189,248,.18), rgba(34,197,94,.12));
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 34px;
-    margin-bottom: 28px;
-    box-shadow: 0 20px 50px rgba(0,0,0,.25);
-  }
-
-  .hero h1 {
-    margin-top: 0;
-    font-size: 2.25rem;
-    line-height: 1.15;
-  }
-
-  .hero p {
-    color: var(--muted);
-    font-size: 1.05rem;
-  }
-
-  .section-card {
-    background: rgba(17,24,39,.92);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 24px;
-    margin: 22px 0;
-    box-shadow: 0 18px 40px rgba(0,0,0,.22);
-  }
-
-  .section-card h2 {
-    margin-top: 0;
-  }
-
-  .section-card p,
-  .section-card li {
-    color: var(--muted);
-  }
-
-  .badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 16px 0;
-  }
-
-  .badge {
-    background: rgba(56,189,248,.12);
-    color: #bae6fd;
-    border: 1px solid rgba(56,189,248,.35);
-    border-radius: 999px;
-    padding: 5px 10px;
-    font-size: .86rem;
-    font-weight: 600;
-  }
-
-  .badge.green {
-    background: rgba(34,197,94,.12);
-    color: #bbf7d0;
-    border-color: rgba(34,197,94,.35);
-  }
-
-  .screenshot {
-    background: #020617;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 14px;
-    margin: 18px 0 28px;
-  }
-
-  .screenshot img {
-    width: 100%;
-    border-radius: 12px;
-    display: block;
-  }
-
-  .button-link {
-    display: inline-block;
-    background: var(--accent);
-    color: #00111f !important;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 10px 14px;
-    border-radius: 12px;
-    margin-top: 10px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    overflow: hidden;
-    border-radius: 14px;
-  }
-
-  th, td {
-    border: 1px solid var(--border);
-    padding: 10px;
-  }
-
-  th {
-    background: var(--card-soft);
-    color: var(--text);
-  }
-
-  td {
-    color: var(--muted);
-  }
-
-  a {
-    color: var(--accent);
-  }
-
-  @media (max-width: 760px) {
-    .hero {
-      padding: 24px;
-    }
-
-    .hero h1 {
-      font-size: 1.8rem;
-    }
-  }
-</style>
-
-<div class="page-wrap">
-
-<section class="hero">
-
-# Conditional Access Security Baseline
-
-This project demonstrates a Microsoft Entra ID Conditional Access security baseline. The lab focuses on creating and documenting Conditional Access policies in **report-only mode** to improve identity security while reducing the risk of accidentally blocking users or administrators.
-
-This project originally started as a Conditional Access design and rollout plan because the lab tenant did not have the required licensing. After Microsoft Entra ID P2 trial access was activated, the project was upgraded to include live Conditional Access policy configuration screenshots.
-
-<div class="badges">
-  <span class="badge">Microsoft Entra ID</span>
-  <span class="badge">Conditional Access</span>
-  <span class="badge">MFA</span>
-  <span class="badge green">Report-Only Mode</span>
-  <span class="badge">Break-Glass Planning</span>
-  <span class="badge">Rollback Planning</span>
-</div>
-
-<a class="button-link" href="../index.html">Back to Home</a>
-
-</section>
-
-<section class="section-card">
-
-## Business Problem
-
-Organizations need to protect user identities without causing unnecessary business disruption. Conditional Access policies help enforce security controls such as MFA, administrator protection, legacy authentication blocking, and sensitive group protection. These policies should be planned, tested, documented, and rolled out carefully.
-
-</section>
-
-<section class="section-card">
-
-## What I Built
-
-- Created a Conditional Access pilot group
-- Added selected test users to the pilot group
-- Documented a break-glass account for emergency access planning
-- Created live Conditional Access policies in report-only mode
-- Created an administrator MFA policy
-- Created a pilot user MFA policy
-- Created a legacy authentication blocking policy
-- Created a sensitive groups MFA policy
-- Created rollback documentation
-- Created a Conditional Access policy matrix
-- Collected screenshots as audit evidence
-
-</section>
-
-<section class="section-card">
-
-## Policies Created
-
-### CA001 - Require MFA for Administrators
-
-This policy targets privileged administrator roles and requires MFA. It was configured in report-only mode to safely test impact before enforcement.
-
-### CA002 - Require MFA for Pilot Users
-
-This policy targets a Conditional Access pilot group and requires MFA for selected users. The pilot group allows controlled testing before applying policies more broadly.
-
-### CA003 - Block Legacy Authentication
-
-This policy is designed to block older authentication methods that do not support modern security controls. It was created in report-only mode to review potential impact before enforcement.
-
-### CA004 - Require MFA for Sensitive Groups
-
-This policy targets sensitive groups such as HR, Finance, IT Admins, and Contractors. These groups may have elevated risk because they involve sensitive business data, privileged access, or temporary contractor access.
-
-</section>
-
-<section class="section-card">
-
-## Lab Groups and Accounts
-
-### Conditional Access Pilot Group
-
-- SG-CA-Pilot-Users
-
-Example pilot users:
-
-- Alice Johnson
-- Brian Lee
-- Carlos Ramirez
-- Dana Smith
-
-### Sensitive Groups
-
-- SG-HR-Employees
-- SG-Finance-Employees
-- SG-IT-Admins
-- SG-Contractors
-
-### Break-Glass Account
-
-A break-glass account was documented for emergency access planning. Break-glass accounts should not be used for daily administration and should be excluded from selected Conditional Access policies to reduce the risk of full tenant lockout.
-
-</section>
-
-<section class="section-card">
-
-## Screenshots
-
-### Conditional Access Policy List
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/conditional-access-policy-list.png" alt="Conditional Access policy list screenshot">
-</div>
-
-### Conditional Access Pilot Group Members
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/ca-pilot-group-members.png" alt="Conditional Access pilot group members screenshot">
-</div>
-
-### Break-Glass Account
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/breakglass-account.png" alt="Break-glass account screenshot">
-</div>
-
-### CA001 - Require MFA for Administrators
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/ca001-admin-mfa-policy.png" alt="CA001 administrator MFA policy screenshot">
-</div>
-
-### CA001 - Report-Only Mode
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/ca001-report-only-mode.png" alt="CA001 report-only mode screenshot">
-</div>
-
-### CA002 - Require MFA for Pilot Users
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/ca002-pilot-mfa-policy.png" alt="CA002 pilot users MFA policy screenshot">
-</div>
-
-### CA003 - Block Legacy Authentication
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/ca003-block-legacy-auth-policy.png" alt="CA003 block legacy authentication policy screenshot">
-</div>
-
-### CA004 - Require MFA for Sensitive Groups
-
-<div class="screenshot">
-  <img src="../assets/conditional-access/ca004-sensitive-groups-mfa.png" alt="CA004 sensitive groups MFA policy screenshot">
-</div>
-
-</section>
-
-<section class="section-card">
-
-## Documentation Summary
-
-### Conditional Access Planning
-
-The project includes a Conditional Access policy matrix that defines target users, target resources, access controls, and deployment mode.
-
-### Report-Only Rollout
-
-The policies were created in report-only mode first. This allows the policy impact to be reviewed before enforcement, reducing the risk of accidentally blocking users or administrators.
-
-### Break-Glass Planning
-
-A break-glass account was documented to support emergency access if Conditional Access policies cause unexpected administrative access issues.
-
-### Rollback Planning
-
-The rollback plan documents how to disable or move a policy back to report-only mode if users or administrators are unexpectedly blocked.
-
-### Sensitive Group Protection
-
-Sensitive groups such as Finance, HR, IT Admins, and Contractors were targeted for stronger MFA controls because they may involve confidential data, privileged access, or temporary access.
-
-</section>
-
-<section class="section-card">
-
-## Testing Approach
-
-1. Create a Conditional Access pilot group.
-2. Add selected test users.
-3. Create policies in report-only mode.
-4. Exclude break-glass accounts where appropriate.
-5. Review policy configuration.
-6. Capture screenshots as evidence.
-7. Document rollback steps.
-8. Move toward enforcement only after testing is complete.
-
-</section>
-
-<section class="section-card">
-
-## Skills Demonstrated
-
-- Microsoft Entra ID
-- Conditional Access
-- MFA policy planning
-- Report-only policy deployment
-- Break-glass account planning
-- Legacy authentication blocking strategy
-- Sensitive group protection
-- Rollback planning
-- IAM policy documentation
-- Audit evidence collection
-
-</section>
-
-<section class="section-card">
-
-## Resume Bullet
-
-Designed and configured Microsoft Entra Conditional Access policies in report-only mode, including administrator MFA, pilot user MFA, legacy authentication blocking, sensitive group protection, break-glass account exclusions, testing strategy, rollback planning, and audit evidence documentation.
-
-<a class="button-link" href="../index.html">Back to Home</a>
-
-</section>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditional Access Security Baseline | Nicholas Tjhung</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../index.html">
+        <span class="avatar-small">NT</span>
+        <span>Nicholas Tjhung</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+        <a href="https://github.com/ntjhung" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Microsoft Entra ID Project</div>
+        <h1>Conditional Access Security Baseline</h1>
+        <p class="hero-subtitle">
+          A Microsoft Entra ID Conditional Access lab focused on report-only policy deployment, MFA requirements, administrator protection, legacy authentication blocking, sensitive group protection, break-glass planning, rollback documentation, and audit evidence.
+        </p>
+
+        <div class="badge-row">
+          <span class="badge">Microsoft Entra ID</span>
+          <span class="badge">Conditional Access</span>
+          <span class="badge">MFA</span>
+          <span class="badge">Report-Only Mode</span>
+          <span class="badge">Break-Glass Planning</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="../index.html">Back to Home</a>
+          <a class="btn btn-secondary" href="../projects.html">View All Projects</a>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="avatar-large">CA</div>
+        <h2>Conditional Access</h2>
+        <p>Report-only security baseline with MFA, break-glass planning, and rollback documentation.</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="case-layout">
+
+        <article class="case-card">
+          <h2>Project Summary</h2>
+          <p>
+            This project demonstrates a Microsoft Entra ID Conditional Access security baseline. The lab focuses on creating and documenting Conditional Access policies in report-only mode to improve identity security while reducing the risk of accidentally blocking users or administrators.
+          </p>
+          <p>
+            This project originally started as a Conditional Access design and rollout plan because the lab tenant did not have the required licensing. After Microsoft Entra ID P2 trial access was activated, the project was upgraded to include live Conditional Access policy configuration screenshots.
+          </p>
+
+          <h2>Business Problem</h2>
+          <p>
+            Organizations need to protect user identities without causing unnecessary business disruption. Conditional Access policies help enforce security controls such as MFA, administrator protection, legacy authentication blocking, and sensitive group protection. These policies should be planned, tested, documented, and rolled out carefully.
+          </p>
+
+          <h2>What I Built</h2>
+          <ul class="case-list">
+            <li>Created a Conditional Access pilot group.</li>
+            <li>Added selected test users to the pilot group.</li>
+            <li>Documented a break-glass account for emergency access planning.</li>
+            <li>Created live Conditional Access policies in report-only mode.</li>
+            <li>Created an administrator MFA policy.</li>
+            <li>Created a pilot user MFA policy.</li>
+            <li>Created a legacy authentication blocking policy.</li>
+            <li>Created a sensitive groups MFA policy.</li>
+            <li>Created rollback documentation.</li>
+            <li>Created a Conditional Access policy matrix.</li>
+            <li>Collected screenshots as audit evidence.</li>
+          </ul>
+        </article>
+
+        <aside class="case-card">
+          <h2>Skills Demonstrated</h2>
+          <ul class="case-list">
+            <li>Microsoft Entra ID</li>
+            <li>Conditional Access</li>
+            <li>MFA policy planning</li>
+            <li>Report-only policy deployment</li>
+            <li>Break-glass account planning</li>
+            <li>Legacy authentication blocking strategy</li>
+            <li>Sensitive group protection</li>
+            <li>Rollback planning</li>
+            <li>IAM policy documentation</li>
+            <li>Audit evidence collection</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Policies Created</h2>
+      <p class="section-subtitle">Conditional Access policies created in report-only mode for safe testing and documentation.</p>
+
+      <div class="case-layout">
+        <article class="case-card">
+          <h3>CA001 - Require MFA for Administrators</h3>
+          <p>
+            This policy targets privileged administrator roles and requires MFA. It was configured in report-only mode to safely test impact before enforcement.
+          </p>
+
+          <h3>CA002 - Require MFA for Pilot Users</h3>
+          <p>
+            This policy targets a Conditional Access pilot group and requires MFA for selected users. The pilot group allows controlled testing before applying policies more broadly.
+          </p>
+        </article>
+
+        <article class="case-card">
+          <h3>CA003 - Block Legacy Authentication</h3>
+          <p>
+            This policy is designed to block older authentication methods that do not support modern security controls. It was created in report-only mode to review potential impact before enforcement.
+          </p>
+
+          <h3>CA004 - Require MFA for Sensitive Groups</h3>
+          <p>
+            This policy targets sensitive groups such as HR, Finance, IT Admins, and Contractors. These groups may have elevated risk because they involve sensitive business data, privileged access, or temporary contractor access.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Lab Groups and Accounts</h2>
+      <p class="section-subtitle">Groups and accounts used for safe Conditional Access policy testing.</p>
+
+      <div class="case-layout">
+        <article class="case-card">
+          <h3>Conditional Access Pilot Group</h3>
+          <p><strong>Group:</strong> SG-CA-Pilot-Users</p>
+          <ul class="case-list">
+            <li>Alice Johnson</li>
+            <li>Brian Lee</li>
+            <li>Carlos Ramirez</li>
+            <li>Dana Smith</li>
+          </ul>
+
+          <h3>Sensitive Groups</h3>
+          <ul class="case-list">
+            <li>SG-HR-Employees</li>
+            <li>SG-Finance-Employees</li>
+            <li>SG-IT-Admins</li>
+            <li>SG-Contractors</li>
+          </ul>
+        </article>
+
+        <article class="case-card">
+          <h3>Break-Glass Account</h3>
+          <p>
+            A break-glass account was documented for emergency access planning. Break-glass accounts should not be used for daily administration and should be excluded from selected Conditional Access policies to reduce the risk of full tenant lockout.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Screenshots</h2>
+      <p class="section-subtitle">Evidence collected from the Microsoft Entra ID lab environment.</p>
+
+      <div class="screenshot-grid">
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/conditional-access-policy-list.png" alt="Conditional Access policy list screenshot" />
+          <div>
+            <h3>Policy List</h3>
+            <p>Conditional Access policies created in report-only mode.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/ca-pilot-group-members.png" alt="Conditional Access pilot group members screenshot" />
+          <div>
+            <h3>Pilot Group</h3>
+            <p>SG-CA-Pilot-Users group used for controlled testing.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/breakglass-account.png" alt="Break-glass account screenshot" />
+          <div>
+            <h3>Break-Glass Account</h3>
+            <p>Emergency account documented for access recovery planning.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/ca001-admin-mfa-policy.png" alt="CA001 administrator MFA policy screenshot" />
+          <div>
+            <h3>CA001 Admin MFA</h3>
+            <p>Administrator MFA policy configuration.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/ca001-report-only-mode.png" alt="CA001 report-only mode screenshot" />
+          <div>
+            <h3>Report-Only Mode</h3>
+            <p>Policy configured for safe testing before enforcement.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/ca002-pilot-mfa-policy.png" alt="CA002 pilot users MFA policy screenshot" />
+          <div>
+            <h3>CA002 Pilot MFA</h3>
+            <p>MFA policy targeting the Conditional Access pilot group.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/ca003-block-legacy-auth-policy.png" alt="CA003 block legacy authentication policy screenshot" />
+          <div>
+            <h3>CA003 Legacy Auth</h3>
+            <p>Legacy authentication blocking policy.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/conditional-access/ca004-sensitive-groups-mfa.png" alt="CA004 sensitive groups MFA policy screenshot" />
+          <div>
+            <h3>CA004 Sensitive Groups</h3>
+            <p>MFA protection for HR, Finance, IT Admins, and Contractors.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-layout">
+
+        <article class="case-card">
+          <h2>Documentation Summary</h2>
+
+          <h3>Conditional Access Planning</h3>
+          <p>
+            The project includes a Conditional Access policy matrix that defines target users, target resources, access controls, and deployment mode.
+          </p>
+
+          <h3>Report-Only Rollout</h3>
+          <p>
+            The policies were created in report-only mode first. This allows the policy impact to be reviewed before enforcement, reducing the risk of accidentally blocking users or administrators.
+          </p>
+
+          <h3>Break-Glass Planning</h3>
+          <p>
+            A break-glass account was documented to support emergency access if Conditional Access policies cause unexpected administrative access issues.
+          </p>
+
+          <h3>Rollback Planning</h3>
+          <p>
+            The rollback plan documents how to disable or move a policy back to report-only mode if users or administrators are unexpectedly blocked.
+          </p>
+        </article>
+
+        <article class="case-card">
+          <h2>Testing Approach</h2>
+          <ol class="case-list">
+            <li>Create a Conditional Access pilot group.</li>
+            <li>Add selected test users.</li>
+            <li>Create policies in report-only mode.</li>
+            <li>Exclude break-glass accounts where appropriate.</li>
+            <li>Review policy configuration.</li>
+            <li>Capture screenshots as evidence.</li>
+            <li>Document rollback steps.</li>
+            <li>Move toward enforcement only after testing is complete.</li>
+          </ol>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-card">
+        <h2>Resume Bullet</h2>
+        <div class="resume-bullet">
+          Designed and configured Microsoft Entra Conditional Access policies in report-only mode, including administrator MFA, pilot user MFA, legacy authentication blocking, sensitive group protection, break-glass account exclusions, testing strategy, rollback planning, and audit evidence documentation.
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="../index.html">Back to Home</a>
+          <a class="btn btn-secondary" href="../projects.html">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Nicholas Tjhung · IAM Portfolio
+    </div>
+  </footer>
+
+</body>
+</html>
