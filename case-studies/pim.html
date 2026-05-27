@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entra PIM Privileged Access Lab | Nicholas Tjhung</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../index.html">
+        <span class="avatar-small">NT</span>
+        <span>Nicholas Tjhung</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+        <a href="https://github.com/ntjhung" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Microsoft Entra ID P2 Project</div>
+        <h1>Entra PIM Privileged Access Lab</h1>
+        <p class="hero-subtitle">
+          A Microsoft Entra Privileged Identity Management lab focused on eligible role assignments, just-in-time activation, activation justification, time-limited privileged access, break-glass planning, and audit evidence.
+        </p>
+
+        <div class="badge-row">
+          <span class="badge">Microsoft Entra ID</span>
+          <span class="badge">PIM</span>
+          <span class="badge">Just-in-Time Access</span>
+          <span class="badge">Eligible Roles</span>
+          <span class="badge">Audit Evidence</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="../index.html">Back to Home</a>
+          <a class="btn btn-secondary" href="../projects.html">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-layout">
+
+        <article class="case-card">
+          <h2>Project Summary</h2>
+          <p>
+            This project demonstrates Microsoft Entra Privileged Identity Management for privileged access control. The lab focuses on reducing standing administrator access by using eligible role assignments, just-in-time activation, justification, time-limited access, break-glass planning, and audit evidence.
+          </p>
+
+          <h2>Business Problem</h2>
+          <p>
+            Organizations need to reduce the risk of excessive or unnecessary administrator access. Permanent admin access can create security risk if an account is compromised or misused. Privileged Identity Management helps reduce standing access by allowing users to activate privileged roles only when needed.
+          </p>
+
+          <h2>What I Built</h2>
+          <ul class="case-list">
+            <li>Opened and configured Microsoft Entra Privileged Identity Management.</li>
+            <li>Selected a safer privileged role for lab testing.</li>
+            <li>Assigned a role as eligible instead of permanently active.</li>
+            <li>Reviewed role settings.</li>
+            <li>Activated an eligible role as a test user.</li>
+            <li>Entered a business justification for activation.</li>
+            <li>Confirmed the role became active temporarily.</li>
+            <li>Captured PIM audit evidence.</li>
+            <li>Documented break-glass planning.</li>
+          </ul>
+        </article>
+
+        <aside class="case-card">
+          <h2>Skills Demonstrated</h2>
+          <ul class="case-list">
+            <li>Microsoft Entra ID</li>
+            <li>Privileged Identity Management</li>
+            <li>Eligible role assignment</li>
+            <li>Just-in-time privileged access</li>
+            <li>Activation justification</li>
+            <li>Time-limited access</li>
+            <li>Least privilege</li>
+            <li>Break-glass planning</li>
+            <li>Audit evidence collection</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Lab Roles and Accounts</h2>
+      <p class="section-subtitle">Roles and accounts used to demonstrate safer privileged access.</p>
+
+      <div class="case-layout">
+        <article class="case-card">
+          <h3>Roles Used</h3>
+          <ul class="case-list">
+            <li>Groups Administrator</li>
+            <li>User Administrator</li>
+            <li>Authentication Administrator</li>
+          </ul>
+
+          <h3>Recommended First Test Role</h3>
+          <p>
+            Groups Administrator was used as a safer first lab role because it demonstrates privileged access without using permanent Global Administrator access.
+          </p>
+        </article>
+
+        <article class="case-card">
+          <h3>Account Types</h3>
+          <ul class="case-list">
+            <li><strong>Admin / Owner Account:</strong> Used to configure PIM and assign eligible roles.</li>
+            <li><strong>PIM Test User:</strong> Used to activate the eligible role.</li>
+            <li><strong>Break-Glass Account:</strong> Documented for emergency access planning only.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Screenshots</h2>
+      <p class="section-subtitle">Evidence collected from the Microsoft Entra PIM lab environment.</p>
+
+      <div class="screenshot-grid">
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-overview.png" alt="PIM overview screenshot" />
+          <div>
+            <h3>PIM Overview</h3>
+            <p>Microsoft Entra Privileged Identity Management overview.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-eligible-role-assignment.png" alt="PIM eligible role assignment screenshot" />
+          <div>
+            <h3>Eligible Role Assignment</h3>
+            <p>Privileged role assigned as eligible instead of permanently active.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-role-settings.png" alt="PIM role settings screenshot" />
+          <div>
+            <h3>Role Settings</h3>
+            <p>Privileged role settings reviewed for activation controls.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-role-activation.png" alt="PIM role activation screenshot" />
+          <div>
+            <h3>Role Activation</h3>
+            <p>Test user activating an eligible privileged role.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-activation-justification.png" alt="PIM activation justification screenshot" />
+          <div>
+            <h3>Activation Justification</h3>
+            <p>Business reason entered before privileged role activation.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-active-role.png" alt="PIM active role screenshot" />
+          <div>
+            <h3>Active Role</h3>
+            <p>Eligible role activated temporarily.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <img src="../assets/pim/pim-audit-history.png" alt="PIM audit history screenshot" />
+          <div>
+            <h3>PIM Audit History</h3>
+            <p>Audit evidence showing privileged access activity.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-layout">
+
+        <article class="case-card">
+          <h2>Documentation Summary</h2>
+
+          <h3>Eligible Access</h3>
+          <p>
+            Eligible access means the user can activate the role when needed, but the role is not active all the time.
+          </p>
+
+          <h3>Just-in-Time Access</h3>
+          <p>
+            Just-in-time access allows privileged access to be activated only for a limited period.
+          </p>
+
+          <h3>Justification</h3>
+          <p>
+            Justification requires the user to document why privileged access is needed before activating the role.
+          </p>
+
+          <h3>Break-Glass Planning</h3>
+          <p>
+            Break-glass accounts provide emergency access if normal administrator access is unavailable. They should not be used for daily administration.
+          </p>
+        </article>
+
+        <article class="case-card">
+          <h2>Testing Approach</h2>
+          <ol class="case-list">
+            <li>Open Microsoft Entra Privileged Identity Management.</li>
+            <li>Select a safer administrator role for testing.</li>
+            <li>Assign the role as eligible.</li>
+            <li>Review role settings.</li>
+            <li>Sign in as the PIM test user.</li>
+            <li>Activate the eligible role.</li>
+            <li>Enter business justification.</li>
+            <li>Confirm temporary active access.</li>
+            <li>Capture audit evidence.</li>
+          </ol>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="case-card">
+        <h2>Resume Bullet</h2>
+        <div class="resume-bullet">
+          Built a Microsoft Entra PIM privileged access lab using eligible role assignments, just-in-time activation, justification, time-limited access, break-glass planning, and audit evidence documentation.
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="../index.html">Back to Home</a>
+          <a class="btn btn-secondary" href="../projects.html">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Nicholas Tjhung · IAM Portfolio
+    </div>
+  </footer>
+
+</body>
+</html>
